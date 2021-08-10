@@ -13,6 +13,10 @@ class User
   
   def formatted_email
     "#{@full_name} <#{@email}>"
-    
   end
+  
+  def alphabetical_name
+    "#{@first_name}, #{@last_name}"
+  end
+  
 end
