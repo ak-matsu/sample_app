@@ -4,6 +4,9 @@
 // mixins,variables,etc.
 
 $gray-medium-light: #eaeaea;
+$gray-medium_botom: #777777;
+$gray-medium_botom_a: #555555;
+$gray-medium_botom_hover: #222222;
 
 /* universal */
 
@@ -78,11 +81,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: $gray-medium_botom;
   a {
-    color: #555;
+    color: $gray-medium_botom_a;
     &:hover {
-      color: #222;
+      color: $gray-medium_botom_hover;
     }
   }
   small {
