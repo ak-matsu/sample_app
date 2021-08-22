@@ -1,7 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+$ligth-gray: #777;
+
 /* universal */
+
+
 
 // ページ上部に60ピクセルの余白を作成
 body {
@@ -41,7 +46,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $light-gray;
 }
 
 p {
@@ -61,7 +66,7 @@ p {
   padding-top:9px;
   font-weight:bold;
   &:hover {
-    color: #fff;
+    color: $light-gray;
     text-decoration:none;
   }
 }
