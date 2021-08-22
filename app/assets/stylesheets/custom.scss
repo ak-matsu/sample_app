@@ -1,14 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// mixins,variables,etc.
 
-$ligth-gray: #777;
+$gray-medium-light: #eaeaea;
 
 /* universal */
 
-
-
 // ページ上部に60ピクセルの余白を作成
+
 body {
   padding-top: 60px;
 }
@@ -27,6 +27,7 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
 // typography
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +47,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $light-gray;
+  color: $gray-light;
 }
 
 p {
@@ -66,13 +67,9 @@ p {
   padding-top:9px;
   font-weight:bold;
   &:hover {
-    color: $light-gray;
+    color: $gray-light;
     text-decoration:none;
   }
-}
-
-img {
-  // display: none;
 }
 
 // footer
