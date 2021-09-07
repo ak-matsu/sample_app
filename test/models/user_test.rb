@@ -11,21 +11,25 @@ class UserTest < ActiveSupport::TestCase
   end
   
   # 存在性の確認
+  # nameを空白にする
   test "name should be present" do
     @user.name = "  "
     assert_not @user.valid?
   end
   
+  # emailを空白である
   test "email should be present" do
     @user.email = " "
     assert_not@user.valid?
   end
   
+  # nameにaを51文字入力する
   test "name should not be too long" do
     @user.name = "a" * 51
     assert_not @user.valid?
   end
 
+  # emailにaを244文字入力する
   test "email should not be too long" do
     @user.email = "a" * 244 + "@example.com"
     assert_not @user.valid?
