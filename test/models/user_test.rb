@@ -10,6 +10,8 @@ class UserTest < ActiveSupport::TestCase
     assert @user.valid?
   end
   
+  # assert_notメソッドで有効ではないことを確認する。
+  
   # 存在性の確認
   # nameを空白にする
   test "name should be present" do
@@ -17,7 +19,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
-  # emailを空白である
+  # emailを空白にする
   test "email should be present" do
     @user.email = " "
     assert_not@user.valid?
