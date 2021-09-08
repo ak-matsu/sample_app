@@ -65,7 +65,8 @@ class UserTest < ActiveSupport::TestCase
     assert_not duplicate_user.valid?
   end
   
-    test "email addresses should be saved as lower-case" do
+  #入力されたメールアドレスを小文字化する
+  test "email addresses should be saved as lower-case" do
     mixed_case_email = "Foo@ExAMPle.CoM"
     @user.email = mixed_case_email
     @user.save
