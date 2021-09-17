@@ -4,6 +4,12 @@
 // mixins,variables,etc.
 
 $gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 $gray-medium_botom: #777777;
 $gray-medium_botom_a: #555555;
 $gray-medium_botom_hover: #222222;
@@ -98,5 +104,15 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+  
+  /* miscellaneous */
+  
+  .debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    @include box_sizing;
   }
 }
