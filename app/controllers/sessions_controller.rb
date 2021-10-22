@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
     else
       # エラーメッセージを作成する
       render 'new'
+    end
   end
 
   def destroy
