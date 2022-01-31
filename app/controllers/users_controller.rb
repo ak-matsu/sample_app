@@ -56,7 +56,6 @@ class UsersController < ApplicationController
     end
     
     # beforeアクション
-    
     # ログイン済みユーザーであるか確認
     def logged_in_user
       unless logged_in?
