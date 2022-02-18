@@ -46,6 +46,13 @@ class User < ApplicationRecord
       email.downcase!
     end
     
+    # トークンがダイジェストと一致したらtrueを返す
+    def authenticated?(attribute, token)
+      digest = send("#{attribute}_digest")
+      return false if digest.nil?
+      BCrypt::Password.new(digest).is_password?(token)
+    end
+    
     # 有効化トークンとダイジェストを作成および代入する
     def create_activation_digest
       self.activation_token  = User.new_token
