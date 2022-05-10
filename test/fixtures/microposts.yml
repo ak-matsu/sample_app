@@ -35,6 +35,7 @@ zone:
   created_at: <%= 3.days.ago %>
   user: archer
 
+
 tone:
   content: "I'm sorry. Your words made sense, but your sarcastic tone did not."
   created_at: <%= 10.minutes.ago %>
